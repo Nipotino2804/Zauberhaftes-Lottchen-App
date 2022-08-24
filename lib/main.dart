@@ -46,13 +46,9 @@ class _StartpageState extends State<Startpage> {
                 activeIcon: Icon(Icons.house_rounded),
                 label: "Home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.people_alt_outlined),
-                activeIcon: Icon(Icons.people_alt),
-                label: "Das sind Wir"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.map_outlined),
-                activeIcon: Icon(Icons.map),
-                label: "Adresse & Öffnungszeiten"),
+                icon: Icon(Icons.supervised_user_circle_outlined),
+                activeIcon: Icon(Icons.supervised_user_circle),
+                label: "Konatkt"),
             BottomNavigationBarItem(
                 icon: Icon(Icons.meeting_room_outlined),
                 activeIcon: Icon(Icons.meeting_room),
@@ -104,7 +100,7 @@ class AboutUsTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: costomAppBar(
-          "Das sind Wir", true, textStyle(24, FontWeight.w500, Colors.black)),
+          "Kontakt", true, textStyle(24, FontWeight.w500, Colors.black)),
       body: ListView.builder(
         itemCount: 1,
         itemBuilder: (context, index) {
@@ -112,6 +108,13 @@ class AboutUsTab extends StatelessWidget {
             padding: const EdgeInsets.only(top: 25.0),
             child: Column(
               children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 25.0),
+                  child: Text(
+                    "Das sind Wir:",
+                    style: textStyle(24, FontWeight.bold, Colors.black),
+                  ),
+                ),
                 Container(
                   height: MediaQuery.of(context).size.height * 0.40,
                   decoration: BoxDecoration(
@@ -125,6 +128,16 @@ class AboutUsTab extends StatelessWidget {
                   ),
                   elevation: 3,
                   backgroundColor: Colors.yellow[200],
+                ),
+                Text(
+                  "Adresse und Öffnungszeiten:",
+                  style: textStyle(24, FontWeight.bold, Colors.black),
+                ),
+                SimpleDialog(
+                  backgroundColor: Colors.lightGreen[100],
+                  elevation: 3,
+                  title: Text(
+                      "Adresse:\n\nDiana Malerz & Jessica Krischek\nKindertagespflege \"Zauberhaftes Lottchen\"\nVluyner Platz 2a\n47506 Neukirchen-Vluyn\n\n\nÖffnungszeiten:\n\nMonatag:  07:00 - 16:00 Uhr\nDienstag:  07:00 - 16:00 Uhr\nMittwoch:  07:00 - 16:00 Uhr\nDonnerstag:  07:00 - 16:00 Uhr\nFreitag:  07:00 - 16:00 Uhr\n"),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(32.0),
@@ -161,6 +174,29 @@ class AboutUsTab extends StatelessWidget {
                         },
                         child: Icon(Icons.whatsapp),
                       ),
+                      Spacer(),
+                      FloatingActionButton(
+                          child: CircleAvatar(
+                              foregroundImage:
+                                  AssetImage("assets/google_logo.png")),
+                          onPressed: () async {
+                            if (!await launchUrl(google,
+                                mode: LaunchMode.externalApplication)) {
+                              throw 'Google konnte nicht aufgerufen werden';
+                            }
+                          }),
+                      Spacer(),
+                      FloatingActionButton(
+                        onPressed: () async {
+                          if (!await launchUrl(maps,
+                              mode: LaunchMode.externalApplication)) {
+                            throw 'Google Maps konnte nicht aufgerufen werden';
+                          }
+                        },
+                        child: CircleAvatar(
+                            foregroundImage:
+                                AssetImage("assets/googlemaps.jpg")),
+                      ),
                       Spacer(
                         flex: 3,
                       )
@@ -189,37 +225,10 @@ class OpenTimeTab extends StatelessWidget {
         itemBuilder: (context, index) {
           return Column(
             children: [
-              SimpleDialog(
-                backgroundColor: Colors.lightGreen[100],
-                elevation: 3,
-                title: Text(
-                    "Adresse:\n\nDiana Malerz & Jessica Krischek\nKindertagespflege \"Zauberhaftes Lottchen\"\nVluyner Platz 2a\n47506 Neukirchen-Vluyn\n\n\nÖffnungszeiten:\n\nMonatag:  07:00 - 16:00 Uhr\nDienstag:  07:00 - 16:00 Uhr\nMittwoch:  07:00 - 16:00 Uhr\nDonnerstag:  07:00 - 16:00 Uhr\nFreitag:  07:00 - 16:00 Uhr\n"),
-              ),
               Row(
                 children: [
                   Spacer(
                     flex: 3,
-                  ),
-                  FloatingActionButton(
-                      child: CircleAvatar(
-                          foregroundImage:
-                              AssetImage("assets/google_logo.png")),
-                      onPressed: () async {
-                        if (!await launchUrl(google,
-                            mode: LaunchMode.externalApplication)) {
-                          throw 'Google konnte nicht aufgerufen werden';
-                        }
-                      }),
-                  Spacer(),
-                  FloatingActionButton(
-                    onPressed: () async {
-                      if (!await launchUrl(maps,
-                          mode: LaunchMode.externalApplication)) {
-                        throw 'Google Maps konnte nicht aufgerufen werden';
-                      }
-                    },
-                    child: CircleAvatar(
-                        foregroundImage: AssetImage("assets/googlemaps.jpg")),
                   ),
                   Spacer(
                     flex: 3,
@@ -506,7 +515,7 @@ class MoreTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: costomAppBar(
-            "Mehr", true, textStyle(14, FontWeight.w500, Colors.black)),
+            "Mehr", true, textStyle(24, FontWeight.w500, Colors.black)),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
@@ -528,9 +537,9 @@ class MoreTab extends StatelessWidget {
                 ),
               ),
               Text(
-                "Zum Downloaden auf das Bild klicken",
+                "Zum Herunterladen auf das Bild klicken",
                 style: textStyle(18, FontWeight.normal, Colors.black),
-              )
+              ),
             ],
           ),
         ));
