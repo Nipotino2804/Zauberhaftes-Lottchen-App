@@ -27,31 +27,29 @@ class _RoomsTabState extends State<RoomsTab> {
                   ),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.38,
+                  height: MediaQuery.of(context).size.height * 0.40,
                   child: ListView.builder(
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/01-outsite/01.jpg",
-                              width: MediaQuery.of(context).size.width * 1.00,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/01-outsite/02.jpg",
-                              width: MediaQuery.of(context).size.width * 1.00,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/01-outsite/03.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/01-outsite/01.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/01-outsite/02.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/01-outsite/03.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider()
+                        ],
                       );
                     },
                   ),
@@ -69,21 +67,19 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/02-coomIn/01.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/02-coomIn/02.jpg",
-                              width: MediaQuery.of(context).size.width * 1.00,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/02-coomIn/01.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/02-coomIn/02.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                        ],
                       );
                     },
                   ),
@@ -101,16 +97,13 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/kueche.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/kueche.jpg",
+                            width: MediaQuery.of(context).size.width * 0.55,
+                          )
+                        ],
                       );
                     },
                   ),
@@ -128,16 +121,13 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/guste_toilette.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/guste_toilette.jpg",
+                            width: MediaQuery.of(context).size.width * 0.55,
+                          )
+                        ],
                       );
                     },
                   ),
@@ -155,16 +145,13 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/wikelBereich.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/wikelBereich.jpg",
+                            width: MediaQuery.of(context).size.width * 0.55,
+                          )
+                        ],
                       );
                     },
                   ),
@@ -182,16 +169,13 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/eatRoom.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            )
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/eatRoom.jpg",
+                            width: MediaQuery.of(context).size.width * 0.55,
+                          )
+                        ],
                       );
                     },
                   ),
@@ -209,51 +193,49 @@ class _RoomsTabState extends State<RoomsTab> {
                     itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Row(
-                          children: [
-                            Image.asset(
-                              "assets/rooms/playRoom/01.jpg",
-                              width: MediaQuery.of(context).size.width * 1.0,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/02.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/03.jpg",
-                              width: MediaQuery.of(context).size.width * 1.0,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/04.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/05.jpg",
-                              width: MediaQuery.of(context).size.width * 1.0,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/06.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/07.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                            VerticalDivider(),
-                            Image.asset(
-                              "assets/rooms/playRoom/08.jpg",
-                              width: MediaQuery.of(context).size.width * 0.55,
-                            ),
-                          ],
-                        ),
+                      return Row(
+                        children: [
+                          Image.asset(
+                            "assets/rooms/playRoom/01.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/02.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/03.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/04.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/05.jpg",
+                            width: MediaQuery.of(context).size.width,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/06.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/07.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                          Image.asset(
+                            "assets/rooms/playRoom/08.jpg",
+                            width: MediaQuery.of(context).size.width * 0.5,
+                          ),
+                          VerticalDivider(),
+                        ],
                       );
                     },
                   ),

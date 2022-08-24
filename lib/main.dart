@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:zhl_app/variables.dart';
 import 'package:zhl_app/widgets.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -16,7 +17,46 @@ class MyApp extends StatelessWidget {
       theme: myTheme(),
       debugShowCheckedModeBanner: true,
       title: title,
-      home: Startpage(),
+      home: StartApp(),
+    );
+  }
+}
+
+class StartApp extends StatelessWidget {
+  const StartApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ResponsiveBuilder(builder: (context, sizingInformation) {
+      // Check the sizing information here and return your UI
+      if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
+        return Startpage();
+      }
+      if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
+        return OnlySmartphone();
+      }
+
+      return Startpage();
+    });
+  }
+}
+
+class OnlySmartphone extends StatelessWidget {
+  const OnlySmartphone({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: costomAppBar("Nicht Verfügbar", true,
+            textStyle(24, FontWeight.w600, Colors.black)),
+        body: Center(
+            child: Text(
+          "Diese Webseite ist bisher nur auf das Smartphone verfügbar!",
+          style: textStyle(26, FontWeight.bold, Colors.indigo),
+        )),
+      ),
+      title: title,
     );
   }
 }
