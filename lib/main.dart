@@ -506,7 +506,7 @@ class MoreTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: costomAppBar(
-            "Mehr", true, textStyle(24, FontWeight.w500, Colors.black)),
+            "Mehr", true, textStyle(14, FontWeight.w500, Colors.black)),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
