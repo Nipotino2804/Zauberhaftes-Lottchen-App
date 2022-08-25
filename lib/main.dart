@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zhl_app/variables.dart';
-import 'package:zhl_app/widgets.dart';
+import 'package:app/variables.dart';
+import 'package:app/widgets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 void main(List<String> args) {
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      showSemanticsDebugger: false,
       theme: myTheme(),
       debugShowCheckedModeBanner: true,
       title: title,

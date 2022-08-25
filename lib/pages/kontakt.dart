@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:zhl_app/variables.dart';
-import 'package:zhl_app/widgets.dart';
+import 'package:app/variables.dart';
+import 'package:app/widgets.dart';
 
 class KontaktTab extends StatelessWidget {
   const KontaktTab({super.key});

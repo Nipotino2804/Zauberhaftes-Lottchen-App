@@ -1,9 +1,9 @@
 library global;
 
-import 'package:zhl_app/pages/home.dart';
-import 'package:zhl_app/pages/kontakt.dart';
-import 'package:zhl_app/pages/more.dart';
-import 'package:zhl_app/pages/rooms.dart';
+import 'package:app/pages/home.dart';
+import 'package:app/pages/kontakt.dart';
+import 'package:app/pages/more.dart';
+import 'package:app/pages/rooms.dart';
 
 String title = "Zauberhaftes Lottchen";
 int currentIndex = 0;
@@ -14,7 +14,7 @@ List currentSite1 = [
   const MoreTab()
 ];
 final Uri eat =
-    Uri.parse("http://beta.zauberhaftes-lottchen.de/essensplan.jpg");
+    Uri.parse("https://zauberhaftes-lottchen.de/webapp/essensplan.jpg");
 final Uri tel = Uri.parse("tel:+4915736222471");
 final Uri whatsapp = Uri.parse("https://wa.me/+4915736222471");
 final Uri mail = Uri.parse("mailto:diana@zauberhaftes-lottchen.de");

@@ -1,4 +1,4 @@
-package com.example.zhl_app
+package de.zauberhafteslottchen.app
 
 import io.flutter.embedding.android.FlutterActivity
 

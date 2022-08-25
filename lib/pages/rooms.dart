@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zhl_app/widgets.dart';
+import 'package:app/widgets.dart';
 
 class RoomsTab extends StatefulWidget {
   const RoomsTab({super.key});

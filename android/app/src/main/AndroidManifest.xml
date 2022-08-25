@@ -1,25 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.zhl_app">
-
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="tel" />
-        </intent>
-        <intent>
-            <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="mailto" />
-        </intent>
-    </queries>
-
-    
+    package="de.zauberhafteslottchen.app">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
-   
         android:label="Zauberhaftes Lottchen"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <!-- Provide required visibility configuration for API level 30 and above -->
-    
+        
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -46,8 +32,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-    
-    
     </application>
-    
 </manifest>
