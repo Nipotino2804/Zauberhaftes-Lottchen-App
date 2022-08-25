@@ -29,6 +29,7 @@ class MoreTab extends StatelessWidget {
                 },
                 child: Image.network(
                   "http://beta.zauberhaftes-lottchen.de/essensplan.jpg",
+                  width: MediaQuery.of(context).size.width,
                 ),
               ),
               Text(

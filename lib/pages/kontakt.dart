@@ -27,13 +27,13 @@ class KontaktTab extends StatelessWidget {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * 0.40,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       image: DecorationImage(
                           image: AssetImage("assets/dasSindWir.jpg"))),
                 ),
                 SimpleDialog(
                   title: Text(
-                    "Wir sind Diana und Jessica, die beiden Tagesmütter der Kindertagespflege \"Zauberhaftes Lottchen\". Wir haben beide mehrjährige erfahrung in der Kinderbetreuung und begleiteung ihre Kinder liebevoll und individuell durch den Altag im Zauberhaften Lottchen.\n",
+                    "Wir sind Diana und Jessica, die beiden Tagesmütter der Kindertagespflege \"Zauberhaftes Lottchen\". Wir haben beide mehrjährige erfahrung in der Kinderbetreuung und begleiten ihr Kind liebevoll und individuell durch den Tag.\n",
                     style: textStyle(21, FontWeight.w500, Colors.black),
                   ),
                   elevation: 3,
@@ -46,7 +46,7 @@ class KontaktTab extends StatelessWidget {
                 SimpleDialog(
                   backgroundColor: Colors.lightGreen[100],
                   elevation: 3,
-                  title: Text(
+                  title: const Text(
                       "Adresse:\n\nDiana Malerz & Jessica Krischek\nKindertagespflege \"Zauberhaftes Lottchen\"\nVluyner Platz 2a\n47506 Neukirchen-Vluyn\n\n\nÖffnungszeiten:\n\nMonatag:  07:00 - 16:00 Uhr\nDienstag:  07:00 - 16:00 Uhr\nMittwoch:  07:00 - 16:00 Uhr\nDonnerstag:  07:00 - 16:00 Uhr\nFreitag:  07:00 - 16:00 Uhr\n"),
                 ),
                 Padding(
@@ -54,27 +54,27 @@ class KontaktTab extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Spacer(
+                      const Spacer(
                         flex: 3,
                       ),
                       FloatingActionButton(
-                          child: Icon(Icons.phone),
+                          child: const Icon(Icons.phone),
                           onPressed: () async {
                             if (!await launchUrl(tel,
                                 mode: LaunchMode.externalApplication)) {
                               throw '$tel konnte nicht angerufen werden';
                             }
                           }),
-                      Spacer(),
+                      const Spacer(),
                       FloatingActionButton(
-                          child: Icon(Icons.mail),
+                          child: const Icon(Icons.mail),
                           onPressed: () async {
                             if (!await launchUrl(mail,
                                 mode: LaunchMode.externalApplication)) {
                               throw 'Es konnte kein E-Mail an $mail gesendet werden';
                             }
                           }),
-                      Spacer(),
+                      const Spacer(),
                       FloatingActionButton(
                         onPressed: () async {
                           if (!await launchUrl(whatsapp,
@@ -82,11 +82,11 @@ class KontaktTab extends StatelessWidget {
                             throw 'Whatsapp konnte nicht geöffnet werden';
                           }
                         },
-                        child: Icon(Icons.whatsapp),
+                        child: const Icon(Icons.whatsapp),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       FloatingActionButton(
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                               foregroundImage:
                                   AssetImage("assets/google_logo.png")),
                           onPressed: () async {
@@ -95,7 +95,7 @@ class KontaktTab extends StatelessWidget {
                               throw 'Google konnte nicht aufgerufen werden';
                             }
                           }),
-                      Spacer(),
+                      const Spacer(),
                       FloatingActionButton(
                         onPressed: () async {
                           if (!await launchUrl(maps,
@@ -103,11 +103,11 @@ class KontaktTab extends StatelessWidget {
                             throw 'Google Maps konnte nicht aufgerufen werden';
                           }
                         },
-                        child: CircleAvatar(
+                        child: const CircleAvatar(
                             foregroundImage:
                                 AssetImage("assets/googlemaps.jpg")),
                       ),
-                      Spacer(
+                      const Spacer(
                         flex: 3,
                       )
                     ],

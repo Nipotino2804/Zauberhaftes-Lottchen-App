@@ -87,6 +87,7 @@ flutter:
      - assets/rooms/wikelBereich.jpg
      - assets/google_logo.png
      - assets/googlemaps.jpg
+     - http://beta.zauberhaftes-lottchen.de/essensplan.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

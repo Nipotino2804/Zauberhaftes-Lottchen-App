@@ -26,7 +26,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.40,
                   child: ListView.builder(
                     itemCount: 1,
@@ -38,17 +38,17 @@ class _RoomsTabState extends State<RoomsTab> {
                             "assets/rooms/01-outsite/01.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/01-outsite/02.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/01-outsite/03.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider()
+                          const VerticalDivider()
                         ],
                       );
                     },
@@ -61,7 +61,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -73,12 +73,12 @@ class _RoomsTabState extends State<RoomsTab> {
                             "assets/rooms/02-coomIn/01.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/02-coomIn/02.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                         ],
                       );
                     },
@@ -91,7 +91,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -115,7 +115,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -139,7 +139,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -163,7 +163,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -187,7 +187,7 @@ class _RoomsTabState extends State<RoomsTab> {
                     style: textStyle(24, FontWeight.w600, Colors.black),
                   ),
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height * 0.38,
                   child: ListView.builder(
                     itemCount: 1,
@@ -199,42 +199,42 @@ class _RoomsTabState extends State<RoomsTab> {
                             "assets/rooms/playRoom/01.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/02.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/03.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/04.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/05.jpg",
                             width: MediaQuery.of(context).size.width,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/06.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/07.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                           Image.asset(
                             "assets/rooms/playRoom/08.jpg",
                             width: MediaQuery.of(context).size.width * 0.5,
                           ),
-                          VerticalDivider(),
+                          const VerticalDivider(),
                         ],
                       );
                     },

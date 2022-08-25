@@ -15,7 +15,7 @@ class HomeTab extends StatelessWidget {
           return Column(children: [
             Container(
               height: MediaQuery.of(context).size.height * 0.40,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   image: DecorationImage(image: AssetImage("assets/logo.png"))),
             ),
             SimpleDialog(

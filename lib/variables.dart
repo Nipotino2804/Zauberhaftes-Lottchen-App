@@ -1,7 +1,5 @@
 library global;
 
-import 'package:flutter/material.dart';
-import 'package:zhl_app/main.dart';
 import 'package:zhl_app/pages/home.dart';
 import 'package:zhl_app/pages/kontakt.dart';
 import 'package:zhl_app/pages/more.dart';
@@ -9,7 +7,12 @@ import 'package:zhl_app/pages/rooms.dart';
 
 String title = "Zauberhaftes Lottchen";
 int currentIndex = 0;
-List currentSite1 = [HomeTab(), KontaktTab(), RoomsTab(), MoreTab()];
+List currentSite1 = [
+  const HomeTab(),
+  const KontaktTab(),
+  const RoomsTab(),
+  const MoreTab()
+];
 final Uri eat =
     Uri.parse("http://beta.zauberhaftes-lottchen.de/essensplan.jpg");
 final Uri tel = Uri.parse("tel:+4915736222471");

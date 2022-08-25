@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:zhl_app/variables.dart';
 import 'package:zhl_app/widgets.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: myTheme(),
       debugShowCheckedModeBanner: true,
       title: title,
-      home: StartApp(),
+      home: const StartApp(),
     );
   }
 }
@@ -30,16 +29,16 @@ class StartApp extends StatelessWidget {
     return ResponsiveBuilder(builder: (context, sizingInformation) {
       // Check the sizing information here and return your UI
       if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
-        return Startpage();
+        return const Startpage();
       }
       if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
-        return OnlySmartphone();
+        return const OnlySmartphone();
       }
       if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
-        return OnlySmartphone();
+        return const OnlySmartphone();
       }
 
-      return Startpage();
+      return const Startpage();
     });
   }
 }
@@ -83,7 +82,7 @@ class _StartpageState extends State<Startpage> {
                 currentIndex = index;
               }),
           currentIndex: currentIndex,
-          items: [
+          items: const [
             BottomNavigationBarItem(
                 icon: Icon(Icons.house_outlined),
                 activeIcon: Icon(Icons.house_rounded),
