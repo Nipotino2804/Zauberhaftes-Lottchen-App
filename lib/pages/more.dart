@@ -23,15 +23,17 @@ class MoreTab extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () async {
-                  if (!await launchUrl(eat,
-                      mode: LaunchMode.externalApplication)) {}
-                },
-                child: Image.network(
-                  "http://beta.zauberhaftes-lottchen.de/essensplan.jpg",
-                  width: MediaQuery.of(context).size.width,
-                ),
-              ),
+                  onTap: () async {
+                    if (!await launchUrl(eat,
+                        mode: LaunchMode.externalApplication)) {}
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                "http://beta.zauberhaftes-lottchen.de/essensplan.jpg"))),
+                  )),
               Text(
                 "Zum Herunterladen auf das Bild klicken",
                 style: textStyle(18, FontWeight.normal, Colors.black),
