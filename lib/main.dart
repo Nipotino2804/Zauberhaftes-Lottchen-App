@@ -35,6 +35,9 @@ class StartApp extends StatelessWidget {
       if (sizingInformation.deviceScreenType == DeviceScreenType.desktop) {
         return OnlySmartphone();
       }
+      if (sizingInformation.deviceScreenType == DeviceScreenType.tablet) {
+        return OnlySmartphone();
+      }
 
       return Startpage();
     });
@@ -52,7 +55,7 @@ class OnlySmartphone extends StatelessWidget {
             textStyle(24, FontWeight.w600, Colors.black)),
         body: Center(
             child: Text(
-          "Diese Webseite ist bisher nur auf das Smartphone verfügbar!",
+          "Diese App ist bisher nur auf dem Smartphone verfügbar!",
           style: textStyle(26, FontWeight.bold, Colors.indigo),
         )),
       ),
