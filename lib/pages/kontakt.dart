@@ -33,7 +33,7 @@ class KontaktTab extends StatelessWidget {
                 ),
                 SimpleDialog(
                   title: Text(
-                    "Wir sind Diana und Jessica, die beiden Tagesmütter der Kindertagespflege \"Zauberhaftes Lottchen\". Wir haben beide mehrjährige erfahrung in der Kinderbetreuung und begleiten ihr Kind liebevoll und individuell durch den Tag.\n",
+                    "Wir sind Diana und Jessica, die beiden Tagesmütter der Kindertagespflege \"Zauberhaftes Lottchen\".\n Wir haben beide mehrjährige erfahrung in der Kinderbetreuung und begleiten ihr Kind liebevoll und individuell durch den Tag.\n",
                     style: textStyle(21, FontWeight.w500, Colors.black),
                   ),
                   elevation: 3,
@@ -83,6 +83,16 @@ class KontaktTab extends StatelessWidget {
                           }
                         },
                         child: const Icon(Icons.whatsapp),
+                      ),
+                      const Spacer(),
+                      FloatingActionButton(
+                        onPressed: () async {
+                          if (!await launchUrl(facebook,
+                              mode: LaunchMode.externalApplication)) {
+                            throw 'Facebook konnte nicht geöffnet werden';
+                          }
+                        },
+                        child: const Icon(Icons.facebook),
                       ),
                       const Spacer(),
                       FloatingActionButton(

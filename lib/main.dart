@@ -28,7 +28,6 @@ class StartApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(builder: (context, sizingInformation) {
-      // Check the sizing information here and return your UI
       if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
         return const Startpage();
       }

@@ -22,3 +22,5 @@ final Uri google = Uri.parse(
     "https://local.google.com/place?id=4308525716937514437&use=srp&_ga=2.158070266.1595686935.1621767996-1247022315.1621412540");
 final Uri maps = Uri.parse(
     "https://maps.google.com/maps?cid=4308525716937514437&_ga=2.124377418.1595686935.1621767996-1247022315.1621412540");
+final Uri facebook = Uri.parse(
+    "https://de-de.facebook.com/pages/category/Local-Business/Kindertagespflege-Zauberhaftes-Lottchen-1001028009999630");
