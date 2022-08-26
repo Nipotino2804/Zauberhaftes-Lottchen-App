@@ -16,7 +16,9 @@ class HomeTab extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height * 0.40,
               decoration: const BoxDecoration(
-                  image: DecorationImage(image: AssetImage("assets/logo.png"))),
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          "https://zauberhaftes-lottchen.de/webapp/logo.png"))),
             ),
             SimpleDialog(
               title: Text(
