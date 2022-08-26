@@ -31,7 +31,7 @@ class MoreTab extends StatelessWidget {
                           if (!await launchUrl(eat,
                               mode: LaunchMode.externalApplication)) {}
                         },
-                        child: Image(
+                        child: const Image(
                             image: NetworkImage(
                                 "https://zauberhaftes-lottchen.de/webapp/essensplan.jpg"))),
                     Padding(
