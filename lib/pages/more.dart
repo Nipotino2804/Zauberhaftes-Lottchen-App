@@ -32,7 +32,7 @@ class _MoreTabState extends State<MoreTab> {
                         ));
                   });
                 }),
-                selectCard(
+/*                selectCard(
                     context, Icons.monitor_heart_rounded, 'Gesundheitsplan',
                     () {
                   setState(() {
@@ -42,15 +42,16 @@ class _MoreTabState extends State<MoreTab> {
                           builder: (context) => gesundheitsplan(),
                         ));
                   });
-                }),
+                }),*/
+
+                selectCard(context, Icons.web_asset_outlined, 'Impressum',
+                    () async {
+                  if (!await launchUrl(
+                      Uri.parse("https://zauberhaftes-lottchen.de/impressum/"),
+                      mode: LaunchMode.externalApplication)) {}
+                })
               ],
             ),
-            selectCardFullWidth(context, Icons.web_asset_outlined, 'Impressum',
-                () async {
-              if (!await launchUrl(
-                  Uri.parse("https://zauberhaftes-lottchen.de/impressum/"),
-                  mode: LaunchMode.externalApplication)) {}
-            })
           ],
         ),
       ),
@@ -91,7 +92,7 @@ class eat extends StatelessWidget {
   }
 }
 
-class gesundheitsplan extends StatelessWidget {
+/* class gesundheitsplan extends StatelessWidget {
   const gesundheitsplan({super.key});
 
   @override
@@ -115,3 +116,4 @@ class gesundheitsplan extends StatelessWidget {
     );
   }
 }
+*/
